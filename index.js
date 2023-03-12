@@ -5,8 +5,8 @@ const config = require('./config.json');
 console.clear()
 console.log(`${$.magenta('[$$$$]')} Trash last.fm spammer by gu#0001`);
 
-let success = 1
-let failure = 1
+let success = 0
+let failure = 0
 
 async function scrobble() {
   const infos = await fetch("https://openscrobbler.com/api/v2/scrobble.php", {
