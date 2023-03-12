@@ -21,7 +21,7 @@ async function scrobble() {
 
   if (status == 200) {
     success++
-    console.log(`${$.green('[+]')} Scrobble concluido ${$.green(config.song.name)} by ${$.green(config.song.artist)}`)
+    console.log(`${$.green('[+]')} Success ${$.green(config.song.name)} by ${$.green(config.song.artist)}`)
   }
 
   if (status == 429) {
